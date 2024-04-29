@@ -6224,6 +6224,8 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6Im9nNDhKWENoM0lBbkJlcHppUUVqQUllR29TNWdjTEZkRE9TTUdS
 
 3）通过浏览器访问Dashboard的UI
 
+注意由于采用的实https网页，而我们又没有部署证书，所以会有安全提示，需要在浏览器页面上直接键盘输入 ：thisisunsafe
+
 在登录页面上输入上面的token
 
 ![image-20200520144548997](Kubenetes.assets/image-20200520144548997.png)
@@ -6267,8 +6269,3 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6Im9nNDhKWENoM0lBbkJlcHppUUVqQUllR29TNWdjTEZkRE9TTUdS
 ![img](Kubenetes.assets/image-20200520163832827.png)
 
 > Dashboard提供了kubectl的绝大部分功能，这里不再一一演示
-
-
-
-
-
