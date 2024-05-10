@@ -15,4 +15,9 @@ spec:
           - key: podenv
             operator: In
             values: ["pro"]
+        namespaces:
+        - dev
+        namespaceSelector:
+          matchLabels:
+            environment: production
         topologyKey: kubernetes.io/hostname

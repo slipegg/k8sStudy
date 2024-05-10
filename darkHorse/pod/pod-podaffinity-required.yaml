@@ -11,8 +11,13 @@ spec:
     podAffinity: #设置pod亲和性
       requiredDuringSchedulingIgnoredDuringExecution: # 硬限制
       - labelSelector:
-          matchExpressions: # 匹配env的值在["xxx","yyy"]中的标签
+          matchExpressions: # 匹配env的值在["xxx"]中的标签
           - key: podenv
             operator: In
-            values: ["pro","yyy"]
+            values: ["pro"]
+        namespaces:
+        - dev
+        namespaceSelector:
+          matchLabels:
+            environment: production
         topologyKey: kubernetes.io/hostname
